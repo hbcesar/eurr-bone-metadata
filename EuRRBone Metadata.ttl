@@ -6,7 +6,7 @@
 @prefix sio:  <http://semanticscience.org/resource/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://w3id.org/ejp-rd/eurrbone> a ejp:PatientRegistry, dcat:Dataset ;
+<https://w3id.org/lumc/eurrbone> a ejp:PatientRegistry, dcat:Dataset ;
   dct:title "European Registry for Rare Bone and Mineral Conditions" ;
   rdfs:label "EuRR-Bone";
   dct:description """Expert centers for rare bone and mineral conditions and patient representatives  have joined their forces and started the European Registry for Rare Bone and Mineral Conditions (EuRR-Bone) in April 2020. This project works closely with the European Registry for Rare Endocrine Conditions project (EURRECa) and the European Reference Networks for Rare Bone and Rare Endocrine conditions and includes:
