@@ -1,0 +1,35 @@
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sio:  <http://semanticscience.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/ejp-rd/eurrbone> a ejp:PatientRegistry, dcat:Dataset ;
+  dct:title "European Registry for Rare Bone and Mineral Conditions" ;
+  rdfs:label "EuRR-Bone";
+  dct:description """Expert centers for rare bone and mineral conditions and patient representatives  have joined their forces and started the European Registry for Rare Bone and Mineral Conditions (EuRR-Bone) in April 2020. This project works closely with the European Registry for Rare Endocrine Conditions project (EURRECa) and the European Reference Networks for Rare Bone and Rare Endocrine conditions and includes:
+    - An e-reporting program (e-REC) that captures new clinical encounters
+    - A centralised Core registry
+    - Disease-specific modules on Achondroplasia, Fibrous Dysplasia/McCune Albright syndrome, Osteogenesis Imperfecta and Rare Hypophosphatemia""";
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcat:keyword "EuRR-Bone", "rare bone condition", "rare mineral condition";
+  dcat:theme <http://www.orpha.net/ORDO/Orphanet_15>, <http://www.orpha.net/ORDO/Orphanet_595216>,
+    <http://www.orpha.net/ORDO/Orphanet_666>, <http://www.orpha.net/ORDO/Orphanet_437>;
+  dcat:contactPoint <https://eurreca.net/contact/>;
+  dcat:landingPage <https://eurr-bone.com/> ;
+  dct:publisher :organisation ;        
+  ejp:populationCoverage  :population_coverage ;
+  foaf:page <https://eurr-bone.com/> .
+
+:organisation a  foaf:Organisation ;
+  dct:title "EuRR-Bone";
+  dct:spatial  :location ;
+  foaf:page    <https://eurr-bone.com/> .
+
+:population_coverage a sio:SIO_001166 ;
+  rdfs:label  "International" .
+
+:location a dct:Location ;
+  dct:title  "The Netherlands" .
